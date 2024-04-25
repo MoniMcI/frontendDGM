@@ -1,13 +1,50 @@
 .navContainer{
-    margin:0 auto;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--color-primary);;
     height: 30px;
     color: var(--color-text);
     font-weight: 600;
+
+    position: fixed;
+    min-width: 100vw;
+    animation: drop-down 1s ease;
+}
+@keyframes drop-down {
+    0%{top: -100px;}
+    100%{top: 0}
+}
+
+.navContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    height: 35px;
+    transition: all .3s ease;
+    filter: invert(100%);
+}
+.icon:hover{
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.logoText{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    padding-left: 2px;
 }
 
 .menu{
