@@ -3,6 +3,16 @@
     --color-text: white;
     --color-background: black;
     --color-primary: red;
-    --color-secondary: lightgray;
+    --color-secondary: blueviolet;
+
+    /* tema claro */  
+    --bgThemeLight: #ff0;
+    --bgThemeLightNav: red; /* light background Nav*/
+    --textThemeLightNav: #fff; /* Define el color de texto del tema claro */
+   /* tema oscuro */
+    --bgThemeDark: #333;
+    --bgThemeDarkNav: #212121; /* dark background Nav*/
+    --textThemeDarkNav: #ffffff; /* color en el logo */ 
+ 
   }
   
