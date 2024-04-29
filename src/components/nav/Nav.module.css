@@ -2,14 +2,15 @@
     padding: 2rem;
     display: flex;
     align-items: center;
-    background-color: var(--color-primary);;
+    /* background-color: var(--color-primary); */
     height: 30px;
-    color: var(--color-text);
+    /* color: var(--color-text); */
     font-weight: 600;
 
     position: fixed;
     min-width: 100vw;
     animation: drop-down 1s ease;
+    /* border: solid blue; */
 }
 @keyframes drop-down {
     0%{top: -100px;}
@@ -20,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    /* border: solid; */
 }
 
 .logo{
@@ -77,5 +79,42 @@
 }
 
 .menu ul li:hover::after {
-    width: 100%; /* Ancho completo al pasar el cursor sobre el elemento */
+    width: 100%; 
+}
+
+/* theming */
+.themeSwitch{
+    margin-left: auto;
+    position: relative;
+    /* border:solid blueviolet; */
+
+}
+.themeSwitch__input {
+    display: none; /*hides checkbox*/
+}
+
+.lightImage {
+    width: 40px;
+    height: auto; /* Esto asegura que la imagen mantenga su proporción de aspecto */
+}
+
+.darkImage {
+    width: 40px;
+    height: auto; 
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos condicionales según el tema */
+
+
+.navContainer.dark-theme {
+    background-color: var(--bgThemeDarkNav);
+    color: var(--textThemeDark);
+}
+
+.dark-theme .menu ul li::after {
+    background-color: var(--color-secondary);
 }

@@ -1,0 +1,18 @@
+/* Estilos condicionales según el tema */
+.darkTheme  {
+    background-color: black;
+    color: var(--textThemeDark);
+
+}
+
+.lightTheme  {
+    background-color: var(--bgThemeLight);
+    color: var(--textThemeLight);
+}
+
+.container {
+    /* Estilos predeterminados 
+    background-color: var(--bgThemeLight);
+    color: var(--textThemeLight);*/
+    height: 100vw;
+}
